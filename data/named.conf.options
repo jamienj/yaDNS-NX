@@ -1,0 +1,276 @@
+options {
+    directory "/var/cache/bind";
+
+    forwarders {
+        REPLACEIP;
+    };
+
+    forward only;
+
+    dnssec-validation auto;
+    allow-transfer { none; };
+    allow-query { any; };
+    recursion yes;
+
+    auth-nxdomain no;    # conform to RFC1035
+    listen-on-v6 { any; };
+};
+
+zone "nintendo.net" {
+    type master;
+    file "/etc/bind/zones/nintendo.net";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendowifi.net" {
+    type master;
+    file "/etc/bind/zones/nintendowifi.net";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "90dns.test" {
+    type master;
+    file "/etc/bind/zones/90dns.test";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.com" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.co.uk" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo-europe.com" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.jp" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.co.jp" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "google-analytics.com" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "googletagmanager.com" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.es" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.co.kr" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.tw" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.com.hk" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.com.au" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.co.nz" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.at" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.be" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendods.cz" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.dk" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.de" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.fi" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.fr" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.gr" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.hu" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.it" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.nl" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.no" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.pt" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.ru" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.co.za" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.se" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendo.ch" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendoswitch.cn" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendoswitch.com.cn" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+zone "nintendoswitch.com" {
+    type master;
+    file "/etc/bind/zones/generic";
+    forwarders { };
+    allow-query { any; };
+};
+
+//zone "amazonaws.com" {
+//    type master;
+//    file "/etc/bind/zones/generic";
+//    forwarders { };
+//    allow-query { any; };
+//};

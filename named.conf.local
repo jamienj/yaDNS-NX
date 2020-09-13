@@ -1,9 +1,0 @@
-zone "nintendo.net" IN {
-    type master;
-    file "/etc/bind/zones/net.nintendo.zone";
-};
-
-zone "nintendowifi.net" IN {
-    type master;
-    file "/etc/bind/zones/net.nintendowifi.zone";
-};
