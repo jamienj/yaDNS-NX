@@ -1,7 +1,7 @@
 FROM nginx
 
-ENV FORWARDIP="8.8.8.8" \
-IP="192.68.1.20" \
+ENV FORWARDIP="8.8.8.8"
+ENV IP="192.68.1.20"
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
