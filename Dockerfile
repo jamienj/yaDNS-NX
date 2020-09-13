@@ -23,6 +23,6 @@ EXPOSE 53/udp
 EXPOSE 80/tcp
 EXPOSE 80/udp
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD [""]
